@@ -161,7 +161,7 @@ int main()
 		stdst.push(i);
 	}
 	cout << stdst.top() << endl;
-	cout << st.size() << endl;
+	cout << stdst.size() << endl;
 	stdst.push(100);
 	stdst.push(101);
 	stdst.push(102);
@@ -191,5 +191,7 @@ int main()
 	std::cout << "elapsed time: " << elapsed_seconds1.count() << "s\n";
 
 	 
+ 
+
 	 
 }
