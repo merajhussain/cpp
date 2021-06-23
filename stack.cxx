@@ -93,7 +93,6 @@ namespace MyStack
 		{
 			delete[] elems;
 			sz = 100;
-			elems = new T[sz];
 			tos = 0;
 
 		}
