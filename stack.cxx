@@ -92,6 +92,7 @@ namespace MyStack
 		void destroy()
 		{
 			delete[] elems;
+			elems = nullptr;
 			sz = 100;
 			tos = 0;
 
