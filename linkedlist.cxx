@@ -4,13 +4,18 @@ using namespace std;
 
 typedef unsigned long long ull;
 template<class T>
-class Node 
+struct Node 
 {
    
     public:
 	    
 	    Node *next;
 	    T data;
+
+	    ~Node()
+	    {
+
+	    }
 
 };
 
@@ -25,13 +30,27 @@ class LinkedList
 	public:
 	LinkedList()
 	{
-		size =0;
+		size = 0;
 		head = nullptr;
 	
 	}
+
+
+
         
 
+        T get(ull index)
+	{
+		Node<T> *cur = head;
+		for(ull i=1;i<index;i++)
+		{
+                     cur = cur->next;
+		}
 
+		if(cur) return cur->data;
+
+		return T();
+	}
 
 
 	void add(T data)
@@ -59,6 +78,7 @@ class LinkedList
                              temp->data = data;
                              temp->next = nullptr;
                              cur->next = temp;
+			     size++;
 
 			}
 		}
@@ -68,7 +88,7 @@ class LinkedList
 	{
 		if(!head) 
 		{
-			cout << "list empty";
+			cout << "list empty"<<endl;
 			return;
 		}
 
@@ -112,20 +132,75 @@ class LinkedList
 		return size;
 	}
 
+	bool remove(T val)
+	{
+
+		auto temp = head;
+		Node<T> *prev = nullptr;
+
+		while(temp != nullptr)
+		{
+
+			if(temp)
+			{
+				if ( temp->data == val )
+				{
+
+					if( prev == nullptr)//prev is null only if the the val matches head data
+					{
+						head = head->next;
+						
+						delete temp;
+
+						return true;
+					}
+					else
+					{
+                         		    prev->next = temp->next;
+					    delete temp;
+
+					    return true;
+
+					}
+				}
+			}
+
+
+			prev = temp;
+			temp = temp->next;
+		}
+
+		if(temp == nullptr) return false;
+
+		return true;
+	}
+
 
 	~LinkedList()
 	{
 
-		Node<T> *temp = head;
-		while(temp != nullptr)
+		if( head)
 		{
-			if(temp) delete temp;
 
-			temp = temp->next;
+
+
+			auto temp = head;
+			auto next = temp;
+			while(temp != nullptr)
+			{
+				
+				if(temp) 
+				{
+					next = temp->next;
+					delete temp;
+				}
+
+				temp = next;
+			}
+
+			head = nullptr;
+			size=0;
 		}
-
-		head = nullptr;
-		size=0;
 	}
 };
 
@@ -154,6 +229,14 @@ int main()
 	ls.print();
 	ls.reverse();
 	ls.print();
+        cout<<ls.getSize()<<endl;
+	ls.remove("w5");
+	ls.print();
+	ls.remove("w2");
+	ls.print();
+	 
 
+
+     
 	return 0;
 }
