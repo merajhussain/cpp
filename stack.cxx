@@ -4,6 +4,8 @@
 #include<chrono>
 using namespace std;
 typedef unsigned long long ull;
+const ull maxSize=10000000;
+const ull resSizeStackSize = 1000000;
 namespace MyStack
 {
 	template<class T>
@@ -17,7 +19,7 @@ namespace MyStack
 
 		stack()
 		{
-			sz = 10000;
+			sz = 100;
 			elems = new T[sz];
 			tos = 0;
 		}
@@ -26,7 +28,7 @@ namespace MyStack
 			if (tos + 1 == sz)
 			{
 
-				resize(10000);
+				resize(resSizeStackSize);
 				elems[tos] = t;
 				tos++;
 				return true;
@@ -123,7 +125,7 @@ int main()
 	st.push(100);
 	st.push(101);
 	st.push(102);
-	for (int i = 103; i <= 20000; i++)
+	for (ull i = 103; i <= maxSize; i++)
 	{
 		st.push(i);
 	}
@@ -165,7 +167,7 @@ int main()
 	stdst.push(100);
 	stdst.push(101);
 	stdst.push(102);
-	for (int i = 103; i <= 20000; i++)
+	for (ull i = 103; i <=maxSize; i++)
 	{
 		stdst.push(i);
 	}
