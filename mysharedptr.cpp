@@ -9,7 +9,7 @@ class my_shared_ptr
 {
     int* ref_count;
     T* m_ptr;
-    bool isOwner;
+   
 
     
 public:
@@ -19,7 +19,7 @@ public:
         m_ptr = new T;
         *m_ptr = val;
         ref_count = nullptr;
-        isOwner = true;
+      
         if (ref_count)
         {
             ++(*ref_count);
@@ -91,20 +91,13 @@ public:
 
     void reset()
     {
-        if (isOwner)
-        {
-            isOwner = false;
-            delete ref_count;
-            delete m_ptr;
-            ref_count = m_ptr = nullptr;
-            
-        }
+       
         if (ref_count)
         {
             if (*ref_count == 1)
             {
                 if (m_ptr) delete m_ptr;
-                if (ref_count) delete ref_count;
+                delete ref_count;
                 m_ptr = ref_count = nullptr;
             }
             else
@@ -149,7 +142,7 @@ public:
     }
     ~my_shared_ptr()
     {
-        isOwner = false;
+        
         if (ref_count)
         {
             if (*ref_count == 1)
