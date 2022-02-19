@@ -22,7 +22,7 @@ public:
 	}
 	my_unique_ptr& operator=(  my_unique_ptr& src)
 	{
-		this->m_ptr = std::move(src.m_ptr);
+		this->m_ptr =  src.m_ptr;
 		src.m_ptr = nullptr;
 	}
 	void reset()
