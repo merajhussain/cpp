@@ -136,7 +136,7 @@ public:
         cout << this->getVal() << endl;
         cout << this->get_reference_count() << endl;
        
-        cout << ((isOwner) ? "isOwner=true" : "isOwner=false") << endl;
+       // cout << ((isOwner) ? "isOwner=true" : "isOwner=false") << endl;
         cout <<  (isValid()? "isValid=true" : "isValid=false") << endl;
         cout << "==================================" << endl;
     }
