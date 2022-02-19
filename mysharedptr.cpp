@@ -57,7 +57,7 @@ public:
             this->m_ptr = src.m_ptr;
             this->ref_count = src.ref_count;
             (*ref_count)++;
-            this->isOwner = false;
+           
             
         }
 
