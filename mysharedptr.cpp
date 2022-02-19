@@ -30,6 +30,7 @@ public:
             *ref_count = 1;
             m_ptr = new T;
             *m_ptr = val;
+            cout << "memeory allocated" << endl;
         }
     }
 
@@ -44,6 +45,8 @@ public:
             (*ref_count)++;
             this->isOwner = false;
         }
+
+         
     }
 
     my_shared_ptr<T>& operator=(  my_shared_ptr<T>& src)
@@ -55,7 +58,10 @@ public:
             this->ref_count = src.ref_count;
             (*ref_count)++;
             this->isOwner = false;
+            
         }
+
+        return *this;
     }
 
 
@@ -105,6 +111,7 @@ public:
             {
                 --(*ref_count);
                 this->m_ptr = nullptr;
+                this->ref_count = nullptr;
             }
           
         }
@@ -151,7 +158,7 @@ public:
                 if (m_ptr)  delete m_ptr;
                 ref_count = nullptr;
                 m_ptr = nullptr;
-                
+                cout << "memory cleaned" << endl;
             }
             else
             {
@@ -182,23 +189,30 @@ int main() {
 
    // spr3.reset();
    // sptr2.reset();
-    sptr.reset();
+    //sptr.reset();
     sptr.dumpConents();
     sptr2.dumpConents();
     spr3.dumpConents();
 
-    
+    my_shared_ptr<int> msp1(100);
+    spr3 = msp1;
 
 
-    
-    
+    sptr.dumpConents();
+    sptr2.dumpConents();
 
-     
+    msp1.dumpConents();
+    spr3.dumpConents();
 
-     
+    sptr.dumpConents();
+    spr3 = sptr;
+
+  
+    msp1.dumpConents();
+    spr3.dumpConents();
+    sptr.dumpConents();
 
 
-    
    
     return 0;
 }
