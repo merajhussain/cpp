@@ -119,7 +119,12 @@ public:
         
         return false;
     }
-
+    
+    T& operator *()
+	{
+		return *m_ptr;
+	}
+    
     void setVal(T val)
     {
         if (this->isValid())
