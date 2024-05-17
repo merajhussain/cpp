@@ -12,6 +12,7 @@ int main() {
     };
 
     
+	//do transpose
 
     for (int i = 0; i < 2; i++)
     {
@@ -22,6 +23,7 @@ int main() {
     }
  
 
+    //reverse each column
     for (int i = 0; i < 3; i++)
     {
         int start = 0;
