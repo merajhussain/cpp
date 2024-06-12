@@ -14,17 +14,10 @@ public:
 		*m_ptr = val;
 	}
 
-	my_unique_ptr( my_unique_ptr& src)
-	{
-		this->m_ptr = src.m_ptr;
-		src.m_ptr = nullptr;
-
-	}
-	my_unique_ptr& operator=(  my_unique_ptr& src)
-	{
-		this->m_ptr =  src.m_ptr;
-		src.m_ptr = nullptr;
-	}
+	my_unique_ptr( my_unique_ptr& src)=delete;
+	 
+	my_unique_ptr& operator=(  my_unique_ptr& src)=delete;
+	 
 	void reset()
 	{
 		delete m_ptr;
@@ -69,8 +62,8 @@ int main()
 
 	my_unique_ptr<int> muptr(2);
 
-	auto p2(muptr);
-	cout << *p2 << endl;
+	//auto p2(muptr);
+	//cout << *p2 << endl;
 
 	 
 	unique_ptr<int> mu(new int);
