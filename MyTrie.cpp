@@ -129,9 +129,6 @@ int main() {
 
 	MyTrie myTrie;
 
-	string word = "meraj";
-	string word1 = "mer";
-
 	testInsert();
 
 
