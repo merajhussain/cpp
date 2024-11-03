@@ -19,21 +19,23 @@ public:
 	TrieNode* children[26];
 	bool endOfWord = false;
 	char ch;
+	int prefixCount;
 
-	TrieNode( char ch) {
+	TrieNode(char ch) {
 		for (int i = 0; i < 26; i++) {
 
 			children[i] = nullptr;
 			endOfWord = false;
 			this->ch = ch;
+			prefixCount = 0;
 		}
 
 
 	}
 
-	
- 
- };
+
+
+};
 
 class MyTrie {
 
@@ -58,11 +60,12 @@ public:
 				cur = cur->children[insertIndex];
 
 			}
-			else 
+			else
 			{
 
 				cur = cur->children[insertIndex];
 			}
+			cur->prefixCount++;
 		}
 
 		cur->endOfWord = true;
@@ -75,7 +78,7 @@ public:
 		int count = 0;
 
 		for (auto ch : word) {
-			
+
 			int searchIndex = ch - 'a';
 			if (cur->children[searchIndex] == nullptr) {
 				cur == cur->children[searchIndex];
@@ -92,18 +95,37 @@ public:
 	void deleteTrie(TrieNode* node) {
 		if (node == nullptr) return;
 
-	 
+
 		for (int i = 0; i < 26; i++) {
 			if (node->children[i] != nullptr) {
 				deleteTrie(node->children[i]);
 			}
 
 		}
-		 
+
 		delete node;
 
 	}
-	 
+
+	int startsWithCount(string prefix) {
+
+		auto cur = root;
+
+		for (auto ch : prefix) {
+
+			int searchIndex = ch - 'a';
+			if (cur->children[searchIndex] != nullptr) {
+				cur = cur->children[searchIndex];
+			}
+			else {
+				return 0;
+			}
+		}
+
+		return cur->prefixCount;
+
+	}
+
 	~MyTrie() {
 
 		delete(root);
@@ -117,19 +139,55 @@ void testInsert() {
 	string word = "meraj";
 	trie.insert(word);
 	if (trie.search(word)) {
-		cout << "Test run successfully" << endl;
+		cout << "Test {testInsert} run successfully" << endl;
 	}
 	else {
 		cout << "Test failed" << endl;
 	}
 }
 
-int main() {
+void test1StartsWithCount() {
+
+	MyTrie trie;
+	string insert = "meraj";
+	trie.insert(insert);
+	string searchKey = "me";
+	if (trie.startsWithCount(searchKey) == 1) {
+		cout << "Test {test1StartsWithCount} executed succefully" << endl;
+	}
+	else {
+		cout << "Test {test1StartsWithCount} failed :(" << endl;
+	}
+}
+
+
+void test2StartsWithCount() {
+
+	MyTrie trie;
+	string insert1 = "meraj";
+	string insert2 = "me";
+	trie.insert(insert1);
+	trie.insert(insert2);
+
+	string searchKey = "me";
+	if (trie.startsWithCount(searchKey) == 2) {
+		cout << "Test {test2StartsWithCount} executed succefully" << endl;
+	}
+	else {
+		cout << "Test {test2StartsWithCount} failed :(" << endl;
+	}
+}
+
+int main() 
+{
 
 
 	MyTrie myTrie;
 
 	testInsert();
+	test1StartsWithCount();
+	test2StartsWithCount();
+	
 
 
 
@@ -137,4 +195,3 @@ int main() {
 
 }
 
- 
