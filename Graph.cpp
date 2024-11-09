@@ -66,7 +66,7 @@ public:
 
     vector<int> componentsInGraph() {
 
-        set<int> componentCountList;
+        set<int> componentCountList; // use vector to use all components
         vector<bool> visited;
         for (int i = 0; i <= vertices; i++) {
             visited.push_back(false);
