@@ -42,3 +42,11 @@ def test_swapNodesListHead():
     ll.swapNodes(1,5)
     ls = "5->2->3->4->1"
     assert ls == ll.to_String()
+
+def test_addNodeAtHead():
+    ll = LinkedList()
+    ll.addAtHead(1)
+    ll.addAtHead(2)
+    ll.addAtHead(3)
+    ls = "3->2->1"
+    assert ls == ll.to_String()
