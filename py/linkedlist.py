@@ -66,16 +66,20 @@ class LinkedList:
 
         c1.next ,c2.next = c2.next,c1.next
         #print(c2.data)
+    def to_String(self):
+        curr = self.head
+        ls=""
+        while curr:
+            print(curr.data, end="")
+            ls += str(curr.data)
+            if curr.next:
+                print("->", end="")
+                ls +="->"
+            curr = curr.next
+        return ls
 
 
-ll = LinkedList()
-ll.addData(1)
-ll.addData(2)
-ll.addData(3)
-ll.addData(4)
-ll.addData(5)
-ll.printLL()
-ll.reverse()
-ll.printLL()
-ll.swapNodes(5,4)
-ll.printLL()
+
+
+
+
