@@ -8,6 +8,11 @@ class LinkedList:
     def __init__(self):
         self.head=None
 
+    def addAtHead(self, data):
+        node = Node(data)
+        node.next = self.head
+        self.head = node
+
     def addData(self,data):
         node = Node(data)
         if not self.head:
@@ -77,9 +82,3 @@ class LinkedList:
                 ls +="->"
             curr = curr.next
         return ls
-
-
-
-
-
-
