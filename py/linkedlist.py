@@ -108,6 +108,23 @@ class LinkedList:
                 prev = curr
                 curr = curr.next
 
+    def deleteNode(self,key):
+        curr = self.head
+        prev = None
+        if self.head.data == key:
+            self.head = curr.next
+            return
+
+        while curr:
+            if curr.data == key:
+                prev.next = curr.next
+                return
+            else:
+                prev = curr
+                curr = curr.next
+
+
+
     def to_String(self):
         curr = self.head
         ls=""
@@ -117,3 +134,13 @@ class LinkedList:
                 ls +="->"
             curr = curr.next
         return ls
+
+
+ll = LinkedList()
+ll.addData(1)
+ll.addData(2)
+ll.addData(3)
+ll.addData(4)
+ll.addData(5)
+ll.deleteNode(3)
+ll.printLL()

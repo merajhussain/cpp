@@ -1,6 +1,5 @@
 from linkedlist import *
 
-
 def test_createLinkList():
     ll = LinkedList()
     ll.addData(1)
@@ -79,3 +78,27 @@ def test_removeduplicates():
     ll.removeDuplicates()
     expected = "1->2->3->4->5"
     assert expected == ll.to_String()
+
+def test_deleteNode():
+    ll = LinkedList()
+    ll.addData(1)
+    ll.addData(2)
+    ll.addData(3)
+    ll.addData(4)
+    ll.addData(5)
+    ll.deleteNode(3)
+    expected = "1->2->4->5"
+    assert expected == ll.to_String()
+
+def test_deleteHeadNode():
+    ll = LinkedList()
+    ll.addData(1)
+    ll.addData(2)
+    ll.addData(3)
+    ll.addData(4)
+    ll.addData(5)
+    ll.deleteNode(1)
+    expected = "2->3->4->5"
+    assert expected == ll.to_String()
+
+
