@@ -148,11 +148,6 @@ class LinkedList:
             self.head = next
 
 
-
-
-
-
-
     def countNodes(self,data):
         curr = self.head
         count = 0
@@ -161,6 +156,18 @@ class LinkedList:
                 count += 1
             curr = curr.next
         return count
+
+    def moveTailToHead(self):
+        curr = self.head
+        prev = None
+        while curr.next:
+            prev = curr
+            curr = curr.next
+
+        if prev:
+            prev.next = None
+            curr.next = self.head
+            self.head = curr
 
 
 
@@ -173,6 +180,5 @@ class LinkedList:
                 ls +="->"
             curr = curr.next
         return ls
-
 
 

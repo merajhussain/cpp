@@ -126,5 +126,13 @@ def test_rotateList():
     expected = "4->5->1->2->3"
     assert expected == ll.to_String()
 
-
+def test_moveTailToHead():
+    ll = LinkedList()
+    ll.addData(10)
+    ll.addData(20)
+    ll.addData(30)
+    ll.addData(40)
+    ll.moveTailToHead()
+    expected = "40->10->20->30"
+    assert expected == ll.to_String()
 
