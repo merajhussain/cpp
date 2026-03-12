@@ -95,6 +95,19 @@ class LinkedList:
 
         self.head = nl.head
 
+    def removeDuplicates(self):
+        dup = dict()
+        curr = self.head
+        prev = None
+        while curr:
+            if curr.data in dup:
+                prev.next = curr.next
+                curr = curr.next
+            else:
+                dup[curr.data] = 1
+                prev = curr
+                curr = curr.next
+
     def to_String(self):
         curr = self.head
         ls=""

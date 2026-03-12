@@ -64,3 +64,18 @@ def test_mergeSortedLists():
     l1.mergeTwoLists(l2)
     expected = "1->3->4->6->7->9"
     assert expected == l1.to_String()
+
+def test_removeduplicates():
+    ll = LinkedList()
+    ll.addData(1)
+    ll.addData(2)
+    ll.addData(3)
+    ll.addData(4)
+    ll.addData(5)
+    ll.addData(2)
+    ll.addData(3)
+    ll.addData(4)
+    ll.addData(5)
+    ll.removeDuplicates()
+    expected = "1->2->3->4->5"
+    assert expected == ll.to_String()
