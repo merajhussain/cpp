@@ -135,12 +135,3 @@ class LinkedList:
             curr = curr.next
         return ls
 
-
-ll = LinkedList()
-ll.addData(1)
-ll.addData(2)
-ll.addData(3)
-ll.addData(4)
-ll.addData(5)
-ll.deleteNode(3)
-ll.printLL()
