@@ -50,3 +50,17 @@ def test_addNodeAtHead():
     ll.addAtHead(3)
     ls = "3->2->1"
     assert ls == ll.to_String()
+
+def test_mergeSortedLists():
+    l1 = LinkedList()
+    l2 = LinkedList()
+    l1.addData(1)
+    l1.addData(7)
+    l1.addData(9)
+
+    l2.addData(3)
+    l2.addData(4)
+    l2.addData(6)
+    l1.mergeTwoLists(l2)
+    expected = "1->3->4->6->7->9"
+    assert expected == l1.to_String()

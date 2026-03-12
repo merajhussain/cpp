@@ -71,14 +71,36 @@ class LinkedList:
 
         c1.next ,c2.next = c2.next,c1.next
         #print(c2.data)
+
+    def mergeTwoLists(self, l2):
+        c1 = self.head
+        c2 = l2.head
+
+        nl = LinkedList()
+        while c1 and c2:
+            if c1.data <= c2.data:
+                nl.addData(c1.data)
+                c1 = c1.next
+            else:
+                nl.addData(c2.data)
+                c2 = c2.next
+        if c1:
+            while c1:
+                nl.addData(c1.data)
+                c1 = c1.next
+        if c2:
+            while c2:
+                nl.addData(c2.data)
+                c2 = c2.next
+
+        self.head = nl.head
+
     def to_String(self):
         curr = self.head
         ls=""
         while curr:
-            print(curr.data, end="")
             ls += str(curr.data)
             if curr.next:
-                print("->", end="")
                 ls +="->"
             curr = curr.next
         return ls
