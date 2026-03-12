@@ -169,16 +169,14 @@ class LinkedList:
             curr.next = self.head
             self.head = curr
 
-
-
     def to_String(self):
+        return "->".join(map(str, self))
+
+    def __iter__(self):
         curr = self.head
-        ls=""
         while curr:
-            ls += str(curr.data)
-            if curr.next:
-                ls +="->"
+            yield curr.data
             curr = curr.next
-        return ls
+
 
 
