@@ -1,5 +1,3 @@
-from PIL.SpiderImagePlugin import iforms
-
 
 class Node:
     def __init__(self,data):
