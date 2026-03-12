@@ -1,3 +1,6 @@
+from PIL.SpiderImagePlugin import iforms
+
+
 class Node:
     def __init__(self,data):
         self.data = data
@@ -123,6 +126,35 @@ class LinkedList:
                 prev = curr
                 curr = curr.next
 
+    def rotateListAtPivot(self,pivot):
+
+        if self.head is None:
+            return
+
+        curr = self.head
+        next = None
+        while curr:
+            if curr.data == pivot:
+                next = curr.next
+                curr.next = None
+                break
+            curr = curr.next
+        if next:
+            c = next
+            p = None
+            while c:
+                p = c
+                c = c.next
+
+            p.next = self.head
+            self.head = next
+
+
+
+
+
+
+
     def countNodes(self,data):
         curr = self.head
         count = 0
@@ -143,4 +175,6 @@ class LinkedList:
                 ls +="->"
             curr = curr.next
         return ls
+
+
 
