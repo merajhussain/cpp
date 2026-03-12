@@ -101,4 +101,19 @@ def test_deleteHeadNode():
     expected = "2->3->4->5"
     assert expected == ll.to_String()
 
+def test_countNode():
+    ll = LinkedList()
+    ll.addData(1)
+    ll.addData(2)
+    ll.addData(3)
+    ll.addData(3)
+    ll.addData(4)
+    ll.addData(3)
+    ll.addData(5)
+    ll.addData(3)
+    expected = 4
+
+    assert expected == ll.countNodes(3)
+
+
 

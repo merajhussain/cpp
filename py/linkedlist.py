@@ -123,6 +123,15 @@ class LinkedList:
                 prev = curr
                 curr = curr.next
 
+    def countNodes(self,data):
+        curr = self.head
+        count = 0
+        while curr:
+            if curr.data == data:
+                count += 1
+            curr = curr.next
+        return count
+
 
 
     def to_String(self):
