@@ -136,3 +136,18 @@ def test_moveTailToHead():
     expected = "40->10->20->30"
     assert expected == ll.to_String()
 
+def test_listiterator():
+    ll=LinkedList()
+    ll.addData(10)
+    ll.addData(20)
+    ll.addData(30)
+    assert  3 == len([x for x in ll])
+
+def test_listIteratorEmptyList():
+
+    ll = LinkedList()
+    assert 0 == len([x for x in ll])
+
+
+
+cd 
