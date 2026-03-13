@@ -150,3 +150,31 @@ def test_listIteratorEmptyList():
 
 
 
+def test_addTwoList():
+    l1 = LinkedList()
+    l1.addData(1)
+    l1.addData(2)
+    l1.addData(9)
+
+    l2 = LinkedList()
+    l2.addData(9)
+    l2.addData(2)
+    l2.addData(9)
+    l1.addList(l2)
+
+    expected = "0->5->8->1"
+    assert expected == l1.to_String()
+
+def test_addTwoListWithDifferentPlaces():
+    l1 = LinkedList()
+    l1.addData(1)
+    l1.addData(2)
+    l1.addData(9)
+
+    l2 = LinkedList()
+    l2.addData(9)
+    l2.addData(2)
+    l1.addList(l2)
+
+    expected = "0->5->9"
+    assert expected == l1.to_String()

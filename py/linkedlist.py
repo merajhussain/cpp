@@ -169,6 +169,49 @@ class LinkedList:
             curr.next = self.head
             self.head = curr
 
+    def addList(self,l2):
+        if not self.head or not l2:
+            return
+        c1=self.head
+        c2= l2.head
+        carry =0
+        sumList = LinkedList()
+        while c1 and c2:
+
+            sum = c1.data+c2.data+carry
+            if sum >= 10:
+                sum = sum%10
+                carry = 1
+            else:
+                carry=0
+
+            sumList.addData(sum)
+            c1 = c1.next
+            c2 = c2.next
+        if c1:
+            while c1:
+                sum = c1.data+carry
+                if sum >= 10:
+                    sum = sum%10
+                    carry = 1
+                else:
+                    carry =0
+                sumList.addData(sum)
+                c1 = c1.next
+        if c2:
+            while c2:
+                sum = c2.data+carry
+                if sum >= 10:
+                    sum = sum%10
+                    carry = 1
+                else:
+                    carry = 0
+                sumList.addData(sum)
+                c2 = c2.next
+        if carry>0:
+            sumList.addData(carry)
+        self.head = sumList.head
+
     def to_String(self):
         return "->".join(map(str, self))
 
@@ -177,6 +220,7 @@ class LinkedList:
         while curr:
             yield curr.data
             curr = curr.next
+
 
 
 
