@@ -24,6 +24,28 @@ class CircularList:
             current=current.next
         yield current.data
 
+    def delete(self,key):
+        current=self.head
+        prev=None
+        if key == self.head.data:
+            while current.next != self.head:
+                prev=current
+                current=current.next
+
+
+            prev = current
+            current = current.next
+            prev.next=current.next
+            self.head=current.next
+            return
+        while current:
+            if current.data==key:
+                prev.next=current.next
+                return
+            else:
+                prev=current
+                current=current.next
+
     def to_string(self):
         s = "->".join(map(str,self))
         return s
