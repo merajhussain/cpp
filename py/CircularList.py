@@ -1,4 +1,6 @@
 from Node import Node
+from linkedlist import LinkedList
+
 
 class CircularList:
     def __init__(self):
@@ -46,8 +48,34 @@ class CircularList:
                 prev=current
                 current=current.next
 
+    def splitList(self):
+
+        mid = len(self)//2
+        curr = self.head
+        prev = None
+        l1 = CircularList()
+        l2 = CircularList()
+        i =0
+        for val in self:
+            if i<=mid:
+                l1.append(val)
+            else:
+                l2.append(val)
+            i +=1
+        return [l1,l2]
+        
+
+
     def to_string(self):
         s = "->".join(map(str,self))
         return s
+
+    def __len__(self):
+        current=self.head
+        count=0
+        while current.next != self.head:
+            current=current.next
+            count+=1
+        return count
 
 
