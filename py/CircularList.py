@@ -1,4 +1,5 @@
 from Node import Node
+from linkedlist import LinkedList
 
 
 class CircularList:
@@ -88,11 +89,12 @@ class CircularList:
         return s
 
     @staticmethod
-    def is_circular_list(list):
-        current = list.head
+    def is_circular_list(linkedlist):
+        assert isinstance(linkedlist,(CircularList,LinkedList))
+        current = linkedlist.head
         while True:
             if current:
-                if current.next == list.head:
+                if current.next == linkedlist.head:
                     return True
             else:
                 return False
