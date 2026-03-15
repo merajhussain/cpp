@@ -1,3 +1,5 @@
+import pytest
+
 from CircularList import CircularList
 from linkedlist import LinkedList
 
@@ -83,3 +85,7 @@ def test_isSingleLinkedListCircular():
     li.addData(3)
     li.addData(4)
     assert False == CircularList.is_circular_list(li)
+
+def test_invalidListAssertion():
+    with pytest.raises(AssertionError):
+        CircularList().is_circular_list([1,2,3])
