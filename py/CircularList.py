@@ -62,8 +62,26 @@ class CircularList:
                 l2.append(val)
             i +=1
         return [l1,l2]
-        
 
+    def joseph_survivor(self,step):
+        eliminations = []
+        while self.head != self.head.next:
+            current = self.head
+            prev = None
+            next = None
+            i =0
+            while i < step-1:
+                current = current.next
+                next = current.next
+                prev = current
+                i +=1
+            #print("eliminated=",current.data)
+            eliminations.append(current.data)
+            self.delete(current.data)
+            prev.next=next
+            self.head = next
+            #print("new head=",self.head.data)
+        return eliminations
 
     def to_string(self):
         s = "->".join(map(str,self))
@@ -76,5 +94,4 @@ class CircularList:
             current=current.next
             count+=1
         return count
-
 

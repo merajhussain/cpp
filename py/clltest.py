@@ -50,3 +50,18 @@ def test_splitCircularListOddLength():
     expected1 = "1->2->3"
     expected2 = "4->5"
     assert expected1 == l1.to_string() and expected2 == l2.to_string()
+
+def test_JosephSurvivor():
+    cl = CircularList()
+    cl.append(1)
+    cl.append(2)
+    cl.append(3)
+    cl.append(4)
+    cl.append(5)
+    cl.append(6)
+    cl.append(7)
+    cl.append(8)
+    eliminations = cl.joseph_survivor(4)
+    survivor = "6"
+    expected_eliminations = [4,8,5,2,1,3,7]
+    assert survivor == cl.to_string() and eliminations == expected_eliminations
