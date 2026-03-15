@@ -39,17 +39,6 @@ def test_splitCircularListEvenLength():
     expected2 = "3->4"
     assert expected1 == l1.to_string() and expected2 == l2.to_string()
 
-def test_splitCircularListEvenLength():
-    cl = CircularList()
-    cl.append(1)
-    cl.append(2)
-    cl.append(3)
-    cl.append(4)
-    [l1,l2]=cl.splitList()
-    expected1 = "1->2"
-    expected2 = "3->4"
-    assert expected1 == l1.to_string() and expected2 == l2.to_string()
-
 def test_splitCircularListOddLength():
     cl = CircularList()
     cl.append(1)
