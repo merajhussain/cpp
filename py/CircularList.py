@@ -1,5 +1,4 @@
 from Node import Node
-from linkedlist import LinkedList
 
 
 class CircularList:
