@@ -87,6 +87,17 @@ class CircularList:
         s = "->".join(map(str,self))
         return s
 
+    @staticmethod
+    def is_circular_list(list):
+        current = list.head
+        while True:
+            if current:
+                if current.next == list.head:
+                    return True
+            else:
+                return False
+            current = current.next
+
     def __len__(self):
         current=self.head
         count=0
@@ -94,4 +105,5 @@ class CircularList:
             current=current.next
             count+=1
         return count
+
 

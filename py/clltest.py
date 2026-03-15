@@ -1,4 +1,6 @@
 from CircularList import CircularList
+from linkedlist import LinkedList
+
 
 def test_append():
     cl = CircularList()
@@ -65,3 +67,19 @@ def test_JosephSurvivor():
     survivor = "6"
     expected_eliminations = [4,8,5,2,1,3,7]
     assert survivor == cl.to_string() and eliminations == expected_eliminations
+
+def test_isCircular():
+    cl = CircularList()
+    cl.append(1)
+    cl.append(2)
+    cl.append(3)
+    cl.append(4)
+    assert True==CircularList.is_circular_list(cl)
+
+def test_isSingleLinkedListCircular():
+    li= LinkedList()
+    li.addData(1)
+    li.addData(2)
+    li.addData(3)
+    li.addData(4)
+    assert False == CircularList.is_circular_list(li)
