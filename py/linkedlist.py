@@ -1,6 +1,8 @@
+from Ilist import Ilist
 from Node import Node
 
-class LinkedList:
+class LinkedList(Ilist):
+
     def __init__(self):
         self.head=None
 
@@ -9,7 +11,7 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    def addData(self,data):
+    def append(self,data):
         node = Node(data)
         if not self.head:
             self.head = node
@@ -75,18 +77,18 @@ class LinkedList:
         nl = LinkedList()
         while c1 and c2:
             if c1.data <= c2.data:
-                nl.addData(c1.data)
+                nl.append(c1.data)
                 c1 = c1.next
             else:
-                nl.addData(c2.data)
+                nl.append(c2.data)
                 c2 = c2.next
         if c1:
             while c1:
-                nl.addData(c1.data)
+                nl.append(c1.data)
                 c1 = c1.next
         if c2:
             while c2:
-                nl.addData(c2.data)
+                nl.append(c2.data)
                 c2 = c2.next
 
         self.head = nl.head
@@ -180,7 +182,7 @@ class LinkedList:
             else:
                 carry=0
 
-            sumList.addData(sum)
+            sumList.append(sum)
             c1 = c1.next
             c2 = c2.next
         if c1:
@@ -191,7 +193,7 @@ class LinkedList:
                     carry = 1
                 else:
                     carry =0
-                sumList.addData(sum)
+                sumList.append(sum)
                 c1 = c1.next
         if c2:
             while c2:
@@ -201,13 +203,13 @@ class LinkedList:
                     carry = 1
                 else:
                     carry = 0
-                sumList.addData(sum)
+                sumList.append(sum)
                 c2 = c2.next
         if carry>0:
-            sumList.addData(carry)
+            sumList.append(carry)
         self.head = sumList.head
 
-    def to_String(self):
+    def to_string(self):
         return "->".join(map(str, self))
 
     def __iter__(self):

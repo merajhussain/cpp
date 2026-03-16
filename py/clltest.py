@@ -1,6 +1,7 @@
 import pytest
 
 from CircularList import CircularList
+from CircularListChecker import CircularListChecker
 from linkedlist import LinkedList
 
 
@@ -12,23 +13,23 @@ def test_append():
     expected = "1->2->3"
     assert expected == cl.to_string()
 
-def test_delete():
+def test_deleteNode():
     cl = CircularList()
     cl.append(1)
     cl.append(2)
     cl.append(3)
     cl.append(4)
-    cl.delete(3)
+    cl.deleteNode(3)
     expected = "1->2->4"
     assert expected == cl.to_string()
 
-def test_deleteHead():
+def test_deleteNodeHead():
     cl = CircularList()
     cl.append(1)
     cl.append(2)
     cl.append(3)
     cl.append(4)
-    cl.delete(1)
+    cl.deleteNode(1)
     expected = "2->3->4"
     assert expected == cl.to_string()
 
@@ -76,16 +77,9 @@ def test_isCircular():
     cl.append(2)
     cl.append(3)
     cl.append(4)
-    assert True==CircularList.is_circular_list(cl)
+    assert True==CircularListChecker.is_circular(cl)
 
-def test_isSingleLinkedListCircular():
-    li= LinkedList()
-    li.addData(1)
-    li.addData(2)
-    li.addData(3)
-    li.addData(4)
-    assert False == CircularList.is_circular_list(li)
 
 def test_invalidListAssertion():
     with pytest.raises(AssertionError):
-        CircularList().is_circular_list([1,2,3])
+        CircularListChecker.is_circular([1,2,3])

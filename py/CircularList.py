@@ -1,8 +1,9 @@
+from Ilist import Ilist
 from Node import Node
-from linkedlist import LinkedList
 
 
-class CircularList:
+class CircularList(Ilist):
+
     def __init__(self):
         self.head=None
 
@@ -26,7 +27,7 @@ class CircularList:
             current=current.next
         yield current.data
 
-    def delete(self,key):
+    def deleteNode(self,key):
         current=self.head
         prev=None
         if key == self.head.data:
@@ -78,7 +79,7 @@ class CircularList:
                 i +=1
             #print("eliminated=",current.data)
             eliminations.append(current.data)
-            self.delete(current.data)
+            self.deleteNode(current.data)
             prev.next=next
             self.head = next
             #print("new head=",self.head.data)
@@ -87,18 +88,6 @@ class CircularList:
     def to_string(self):
         s = "->".join(map(str,self))
         return s
-
-    @staticmethod
-    def is_circular_list(linkedlist):
-        assert isinstance(linkedlist,(CircularList,LinkedList))
-        current = linkedlist.head
-        while True:
-            if current:
-                if current.next == linkedlist.head:
-                    return True
-            else:
-                return False
-            current = current.next
 
     def __len__(self):
         current=self.head
