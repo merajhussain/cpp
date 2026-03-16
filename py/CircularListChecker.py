@@ -7,7 +7,7 @@ class CircularListChecker:
 
     @staticmethod
     def is_circular(linkedlist):
-        assert isinstance(linkedlist, (LinkedList,CircularList))
+        assert isinstance(linkedlist, Ilist.Ilist)
         current = linkedlist.head
         while True:
             if current:
