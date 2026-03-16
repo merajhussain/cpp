@@ -4,6 +4,9 @@ from Node import Node
 
 class CircularList(Ilist):
 
+    def prepend(self, item):
+        raise NotImplementedError
+
     def __init__(self):
         self.head=None
 

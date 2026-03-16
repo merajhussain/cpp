@@ -10,3 +10,6 @@ class Ilist:
     @abstractmethod
     def to_string(self):
         pass
+    @abstractmethod
+    def prepend(self,item):
+        pass

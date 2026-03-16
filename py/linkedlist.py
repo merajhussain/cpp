@@ -3,6 +3,8 @@ from Node import Node
 
 class LinkedList(Ilist):
 
+
+
     def __init__(self):
         self.head=None
 
@@ -217,6 +219,9 @@ class LinkedList(Ilist):
         while curr:
             yield curr.data
             curr = curr.next
+
+    def prepend(self, item):
+        raise NotImplementedError
 
 
 
