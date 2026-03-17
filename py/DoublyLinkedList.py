@@ -109,3 +109,42 @@ class doublyLinkedList(Ilist):
             prev = current
             current = next
         self.head = prev
+
+    def delete_list_node(self,node):
+        if self.head == None:
+            return
+
+        if self.head  == node:
+            next_node = self.head.next
+            self.head = next_node
+
+        current = self.head
+        while current:
+            if current == node:
+                next = current.next
+                prev = current.prev
+                prev.next = next
+                if next != None:
+                    next.prev = prev
+                return
+            current = current.next
+
+    def getNode(self,data):
+        current = self.head
+        while current:
+            if current.data == data:
+                return current
+            current = current.next
+
+    def remove_duplicates(self):
+        dups = dict()
+        current = self.head
+        while current:
+            if current.data in dups:
+                self.delete_list_node(current)
+            else:
+                dups[current.data] = 1
+            current = current.next
+
+
+

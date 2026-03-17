@@ -97,3 +97,36 @@ def test_reverse():
     expected = "6->5->4->3->2->1"
     assert expected == dll.to_string()
 
+def test_remove_duplicates():
+    dll = doublyLinkedList()
+    dll.append(8)
+    dll.append(4)
+    dll.append(6)
+    dll.append(4)
+    dll.append(8)
+    dll.append(4)
+    dll.append(10)
+    dll.append(12)
+    dll.append(12)
+
+    dll.remove_duplicates()
+    expected = "8->4->6->10->12"
+    assert expected == dll.to_string()
+
+def test_remove_duplicates_2():
+    dll = doublyLinkedList()
+    dll.append(8)
+    dll.append(8)
+    dll.append(8)
+    dll.remove_duplicates()
+    expected = "8"
+    assert expected == dll.to_string()
+
+def test_remove_duplicates_3():
+    dll = doublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.remove_duplicates()
+    expected = "1->2->3"
+    assert expected == dll.to_string()
