@@ -51,3 +51,38 @@ def test_append_before():
     print(dll.to_string())
     expected = "6->1->5->2->3->4"
     assert expected == dll.to_string()
+
+def test_delete_node():
+    dll = doublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.append(4)
+    dll.append(5)
+    dll.deleteNode(2)
+    expected = "1->3->4->5"
+    assert expected == dll.to_string()
+
+def test_delete_head_node():
+    dll = doublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.append(4)
+    dll.append(5)
+    dll.deleteNode(1)
+    expected = "2->3->4->5"
+    assert expected == dll.to_string()
+
+def test_delete_tail_node():
+    dll = doublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.append(4)
+    dll.append(5)
+    dll.deleteNode(5)
+    expected = "1->2->3->4"
+    assert expected == dll.to_string()
+
+

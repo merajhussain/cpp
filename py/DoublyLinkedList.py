@@ -20,7 +20,22 @@ class doublyLinkedList(Ilist):
 
 
     def deleteNode(self, item):
-        pass
+        if self.head == None:
+            return
+
+        if self.head.data == item:
+            next_node = self.head.next
+            self.head = next_node
+            return
+
+        current = self.head
+        while current.data != item:
+            current = current.next
+        next = current.next
+        prev = current.prev
+        prev.next = next
+        if next != None:
+            next.prev = prev
 
     def __len__(self):
         current = self.head
@@ -83,6 +98,4 @@ class doublyLinkedList(Ilist):
                 current.prev = new_node
                 new_node.next = current
                 self.head = new_node
-
-
 
