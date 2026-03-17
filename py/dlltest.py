@@ -85,4 +85,15 @@ def test_delete_tail_node():
     expected = "1->2->3->4"
     assert expected == dll.to_string()
 
+def test_reverse():
+    dll = doublyLinkedList()
+    dll.append(1)
+    dll.append(2)
+    dll.append(3)
+    dll.append(4)
+    dll.append(5)
+    dll.append(6)
+    dll.reverse()
+    expected = "6->5->4->3->2->1"
+    assert expected == dll.to_string()
 

@@ -99,3 +99,13 @@ class doublyLinkedList(Ilist):
                 new_node.next = current
                 self.head = new_node
 
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current:
+            next = current.next
+            current.next = prev
+            current.prev = next
+            prev = current
+            current = next
+        self.head = prev
