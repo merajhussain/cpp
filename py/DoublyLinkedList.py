@@ -50,11 +50,39 @@ class doublyLinkedList(Ilist):
             new_node.next = self.head
             self.head = new_node
 
+    def add_node_after(self,key,item):
+        new_node = dll_node(item)
+        current = self.head
+        if self.head == None:
+            self.head = dll_node(item)
+        else:
+            while current.data != key:
+                current = current.next
+            next = current.next
+            current.next = new_node
+            new_node.prev = current
+            new_node.next = next
+            if next != None:
+                next.prev = new_node
+
+    def add_node_before(self,key,item):
+        new_node = dll_node(item)
+        if self.head == None:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.data != key:
+                current = current.next
+            prev = current.prev
+            if prev != None:
+                prev.next = new_node
+                new_node.prev = prev
+                new_node.next = current
+                current.prev = new_node
+            else:
+                current.prev = new_node
+                new_node.next = current
+                self.head = new_node
 
 
-dll = doublyLinkedList()
-dll.append(1)
-dll.append(2)
-dll.append(3)
-dll.append(4)
 
