@@ -17,11 +17,4 @@ def intersect(arr1, arr2):
 
 
 
-A = [10]
-B = [20]
-
-
-
-print(intersect(A, B))
-
 
