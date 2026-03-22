@@ -5,18 +5,13 @@ using namespace std;
 typedef unsigned long long ull;
 template<class T>
 struct Node 
-{
-   
+{   
     public:
-	    
 	    Node *next;
 	    T data;
-
 	    ~Node()
 	    {
-
 	    }
-
 };
 
 
@@ -235,8 +230,5 @@ int main()
 	ls.remove("w2");
 	ls.print();
 	 
-
-
-     
 	return 0;
 }
