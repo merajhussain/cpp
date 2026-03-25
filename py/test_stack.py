@@ -25,3 +25,11 @@ def test_stack_size():
     stk.push(3);
     expected = 3
     assert expected == stk.size()
+
+def test_stack_peek():
+    stk = Stack()
+    stk.push(1);
+    stk.push(2);
+    stk.push(3);
+    expected = 3
+    assert expected == stk.peek()
