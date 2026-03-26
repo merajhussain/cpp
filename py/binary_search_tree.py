@@ -74,6 +74,23 @@ class binary_search_tree:
             return self.search_key(data,current.right)
 
 
+    def is_bst_tree_helper(self,root):
+        if  root is None:
+            return True
+        if root.left:
+            if root.left.data > root.data:
+                return False
+        if root.right:
+            if root.right.data < root.data:
+                return False
+        return self.is_bst_tree_helper(root.left) and self.is_bst_tree_helper(root.right)
+
+    def is_bst_tree(self):
+        if self.root is None:
+            return True
+        return self.is_bst_tree_helper(self.root)
+
+
 
     def search(self,data):
         return self.search_key(data,self.root)
