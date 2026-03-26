@@ -1,10 +1,7 @@
-from idlelib.tree import TreeNode
-
 
 class Stack:
     def __init__(self):
         self.items =[]
-        TreeNode
 
     def push(self,item):
         self.items.append(item)
