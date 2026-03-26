@@ -103,7 +103,7 @@ class binary_search_tree:
         current = self.root
         queue.enqueue(current)
         s=""
-        while not queue.isempty():
+        while not queue.is_empty():
             item = queue.dequeue()
             s += str(item.data)
 
