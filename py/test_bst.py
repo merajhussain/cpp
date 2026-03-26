@@ -7,7 +7,7 @@ def test_insert():
     bst.insert_node(1)
     bst.insert_node(2)
     bst.insert_node(3)
-    expected = "1->2->3"
+    expected = "1->2->3->"
     assert expected == bst.to_string()
 
 def test_search():
@@ -22,7 +22,7 @@ def test_in_order():
     bst.insert_node(1)
     bst.insert_node(2)
     bst.insert_node(3)
-    expected = "1->2->3"
+    expected = "1->2->3->"
     assert expected == bst.to_string()
 
 def test_pre_order():
@@ -57,3 +57,14 @@ def test_is_bst_tree_false():
     assert False == bst.is_bst_tree()
 
 
+def test_bst_bfs():
+    bst = binary_search_tree()
+    bst.insert_node(5)
+    bst.insert_node(3)
+    bst.insert_node(2)
+    bst.insert_node(1)
+    bst.insert_node(7)
+    bst.insert_node(6)
+    bst.insert_node(8)
+    expected = "5->37->2681"
+    assert expected == bst.dfs()

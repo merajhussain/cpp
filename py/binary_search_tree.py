@@ -1,3 +1,4 @@
+from my_queue import my_queue
 from tree_node import TreeNode
 import io
 from contextlib import redirect_stdout
@@ -30,9 +31,7 @@ class binary_search_tree:
             return
 
         self.in_order(root.left)
-        print(root.data,end="")
-        if root.right:
-            print("->", end="")
+        print(root.data, end="->")
         self.in_order(root.right)
 
     def preorder(self,root=None):
@@ -90,8 +89,6 @@ class binary_search_tree:
             return True
         return self.is_bst_tree_helper(self.root)
 
-
-
     def search(self,data):
         return self.search_key(data,self.root)
 
@@ -100,3 +97,23 @@ class binary_search_tree:
         with redirect_stdout(buffer):
             self.print_tree(order)
         return buffer.getvalue().strip()
+
+    def dfs(self):
+        queue = my_queue()
+        current = self.root
+        queue.enqueue(current)
+        s=""
+        while not queue.isempty():
+            item = queue.dequeue()
+            s += str(item.data)
+
+            if item.left and item.right:
+                s += "->"
+
+            if item.left is not None:
+                queue.enqueue(item.left)
+            if item.right is not None:
+                queue.enqueue(item.right)
+        return s
+
+
