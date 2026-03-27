@@ -118,15 +118,32 @@ class binary_search_tree:
                 queue.enqueue(item.right)
         return s
 
-    def tree_height(self,root=None):
+    def __tree_height(self,root=None):
         if root is None:
             return -1
-        lh= self.tree_height(root.left)
-        rh= self.tree_height(root.right)
+        lh= self.__tree_height(root.left)
+        rh= self.__tree_height(root.right)
         return max(lh,rh)+1
 
 
     def height(self):
-        return self.tree_height(self.root)
+        return self.__tree_height(self.root)
+
+    def size(self):
+        if self.root is None:
+            return 0
+        queue = my_queue()
+        current = self.root
+        queue.enqueue(current)
+        count =0
+        while not queue.is_empty():
+            item = queue.dequeue()
+            count += 1
+            if item.left is not None:
+                queue.enqueue(item.left)
+            if item.right is not None:
+                queue.enqueue(item.right)
+        return count
+
 
 

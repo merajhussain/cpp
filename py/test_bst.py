@@ -81,3 +81,15 @@ def test_bst_height():
     expected = 3
     print(bst.dfs())
     assert expected == bst.height()
+
+def test_bst_size():
+    bst = binary_search_tree()
+    bst.insert_node(5)
+    bst.insert_node(3)
+    bst.insert_node(4)
+    bst.insert_node(2)
+    bst.insert_node(8)
+    bst.insert_node(7)
+    bst.insert_node(6)
+    expected = 7
+    assert expected == bst.size()
