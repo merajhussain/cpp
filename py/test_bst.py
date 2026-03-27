@@ -68,3 +68,16 @@ def test_bst_bfs():
     bst.insert_node(8)
     expected = "5->37->2681"
     assert expected == bst.dfs()
+
+def test_bst_height():
+    bst = binary_search_tree()
+    bst.insert_node(5)
+    bst.insert_node(3)
+    bst.insert_node(4)
+    bst.insert_node(2)
+    bst.insert_node(8)
+    bst.insert_node(7)
+    bst.insert_node(6)
+    expected = 3
+    print(bst.dfs())
+    assert expected == bst.height()

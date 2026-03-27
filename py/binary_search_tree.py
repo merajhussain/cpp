@@ -1,3 +1,5 @@
+from idlelib import tree
+
 from my_queue import my_queue
 from tree_node import TreeNode
 import io
@@ -115,5 +117,16 @@ class binary_search_tree:
             if item.right is not None:
                 queue.enqueue(item.right)
         return s
+
+    def tree_height(self,root=None):
+        if root is None:
+            return -1
+        lh= self.tree_height(root.left)
+        rh= self.tree_height(root.right)
+        return max(lh,rh)+1
+
+
+    def height(self):
+        return self.tree_height(self.root)
 
 
