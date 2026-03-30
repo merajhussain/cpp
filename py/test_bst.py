@@ -79,7 +79,7 @@ def test_bst_height():
     bst.insert_node(7)
     bst.insert_node(6)
     expected = 3
-    print(bst.dfs())
+    #print(bst.dfs())
     assert expected == bst.height()
 
 def test_bst_size():
