@@ -101,21 +101,27 @@ class binary_search_tree:
         return buffer.getvalue().strip()
 
     def dfs(self):
+        if self.root is None:
+            return
+
         queue = my_queue()
         current = self.root
         queue.enqueue(current)
+
         s=""
         while not queue.is_empty():
-            item = queue.dequeue()
-            s += str(item.data)
+            level_size = queue.size()
 
-            if item.left and item.right:
-                s += "->"
+            for _ in range(level_size):
+                item = queue.dequeue()
+                s += str(item.data)
 
-            if item.left is not None:
-                queue.enqueue(item.left)
-            if item.right is not None:
-                queue.enqueue(item.right)
+                if item.left is not None:
+                    queue.enqueue(item.left)
+                if item.right is not None:
+                    queue.enqueue(item.right)
+
+            s += "|"
         return s
 
     def __tree_height(self,root=None):
@@ -145,5 +151,48 @@ class binary_search_tree:
                 queue.enqueue(item.right)
         return count
 
+    def get_min_node(self,node):
+        assert node is not None
+        prev = None
+        while node.left is not None:
+            prev = node
+            node = node.left
 
+        return node,prev
+
+    def delete_node(self,val):
+        if self.root is None:
+            return
+        curr = self.root
+        prev = None
+        while curr:
+            if curr.data == val:
+                if curr.left is None and curr.right is None:
+                    if curr == prev.left:
+                        prev.left = None
+                    elif curr == prev.right:
+                        prev.right = None
+                elif curr.left is not None and curr.right is not None:
+                    smallest,parent_Smallest_Node = self.get_min_node(curr)
+                    curr.data = smallest.data
+                    parent_Smallest_Node.left = None
+
+                else:
+                    if curr == prev.right:
+                        if curr.right:
+                            prev.right = curr.right
+                        else:
+                            prev.right = curr.left
+                    elif curr == prev.left:
+                        if curr.left:
+                            prev.left = curr.left
+                        else:
+                            prev.left = curr.right
+                return
+            elif val < curr.data:
+                prev = curr
+                curr = curr.left
+            else:
+                prev = curr
+                curr = curr.right
 

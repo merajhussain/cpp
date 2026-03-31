@@ -60,13 +60,14 @@ def test_is_bst_tree_false():
 def test_bst_bfs():
     bst = binary_search_tree()
     bst.insert_node(5)
-    bst.insert_node(3)
     bst.insert_node(2)
+    bst.insert_node(3)
     bst.insert_node(1)
     bst.insert_node(7)
     bst.insert_node(6)
     bst.insert_node(8)
-    expected = "5->37->2681"
+    expected = "5|27|1368|"
+
     assert expected == bst.dfs()
 
 def test_bst_height():
@@ -93,3 +94,41 @@ def test_bst_size():
     bst.insert_node(6)
     expected = 7
     assert expected == bst.size()
+
+def test_bst_delete_node_no_children():
+    bst = binary_search_tree()
+    bst.insert_node(50)
+    bst.insert_node(40)
+    bst.insert_node(45)
+    bst.insert_node(30)
+    bst.insert_node(70)
+    bst.insert_node(60)
+    bst.insert_node(80)
+    bst.delete_node(30)
+    expected = "50|4070|456080|"
+    assert expected == bst.dfs()
+
+def test_bst_delete_node_one_child():
+    bst = binary_search_tree()
+    bst.insert_node(50)
+    bst.insert_node(40)
+    bst.insert_node(30)
+    bst.insert_node(70)
+    bst.insert_node(60)
+    bst.insert_node(80)
+    bst.delete_node(40)
+    expected = "50|3070|6080|"
+    assert expected == bst.dfs()
+
+def test_bst_delete_root_node():
+    bst = binary_search_tree()
+    bst.insert_node(50)
+    bst.insert_node(40)
+    bst.insert_node(30)
+    bst.insert_node(45)
+    bst.insert_node(70)
+    bst.insert_node(60)
+    bst.insert_node(80)
+    bst.delete_node(50)
+    expected = "30|4070|456080|"
+    assert expected == bst.dfs()
