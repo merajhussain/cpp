@@ -167,17 +167,17 @@ class binary_search_tree:
         prev = None
         while curr:
             if curr.data == val:
-                if curr.left is None and curr.right is None:
+                if curr.left is None and curr.right is None: #no children
                     if curr == prev.left:
                         prev.left = None
                     elif curr == prev.right:
                         prev.right = None
-                elif curr.left is not None and curr.right is not None:
+                elif curr.left is not None and curr.right is not None: #two children
                     smallest,parent_Smallest_Node = self.get_min_node(curr)
                     curr.data = smallest.data
                     parent_Smallest_Node.left = None
 
-                else:
+                else: #one child
                     if curr == prev.right:
                         if curr.right:
                             prev.right = curr.right
