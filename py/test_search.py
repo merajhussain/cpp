@@ -1,5 +1,5 @@
 
-from array_search import linear_search, binary_search
+from array_search import *
 import time
 
 
@@ -46,3 +46,14 @@ def test_performace():
     print("Binary search elapsed:",format(elapsed2, '.15f'))
     assert elapsed1 > elapsed2 and i1==i2
 
+def test_fixed_point1():
+    arr = [-10, -5, 0, 3, 7]
+    assert 3 == fixed_number(arr)
+
+def test_fixed_point2():
+    arr = [0, 2, 5, 8, 17]
+    assert 0 == fixed_number(arr)
+
+def test_fixed_point3():
+    arr = [-10, -5, 3, 4, 7, 9]
+    assert None == fixed_number(arr)
