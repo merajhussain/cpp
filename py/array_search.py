@@ -1,3 +1,6 @@
+import math
+
+
 def linear_search(arr,value):
     for i in range(len(arr)):
         if arr[i] == value:
@@ -48,3 +51,17 @@ def biotonic_peak(arr):
         elif ml<me and mr < me:
             return me
     return None
+
+def integer_sqrt(k):
+    low = 0
+    high = k - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if mid *mid <= k:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return low-1
+
+def integer_sqr_root(k):
+    return int(math.sqrt(k))

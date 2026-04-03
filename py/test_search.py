@@ -73,3 +73,9 @@ def test_biotonic_peak3():
 def test_biotonic_peak4():
     arr = [1,2,3,4,5]
     assert None == biotonic_peak(arr)
+
+def test_integer_square_root():
+    assert 17 == integer_sqrt(300)
+
+def test_integer_square_root_2():
+    assert 3 == integer_sqrt(12)
