@@ -57,3 +57,19 @@ def test_fixed_point2():
 def test_fixed_point3():
     arr = [-10, -5, 3, 4, 7, 9]
     assert None == fixed_number(arr)
+
+def test_biotonic_peak1():
+    arr = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+    assert 5 == biotonic_peak(arr)
+
+def test_biotonic_peak2():
+    arr = [1, 6, 5, 4, 3, 2, 1]
+    assert 6 == biotonic_peak(arr)
+
+def test_biotonic_peak3():
+    arr = [5, 4, 3, 2, 1]
+    assert 5 == biotonic_peak(arr)
+
+def test_biotonic_peak4():
+    arr = [1,2,3,4,5]
+    assert None == biotonic_peak(arr)
