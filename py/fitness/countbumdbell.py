@@ -13,7 +13,7 @@ def angle(a, b, c):
     ang = abs(ang)
     return 360-ang if ang > 180 else ang
 
-MODEL_PATH = "pose_landmarker_lite.task"
+MODEL_PATH = "pose_landmarker_heavy.task"
 
 base_options = python.BaseOptions(model_asset_path=MODEL_PATH)
 options = vision.PoseLandmarkerOptions(
