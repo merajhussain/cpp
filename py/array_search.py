@@ -1,6 +1,5 @@
 import math
 
-
 def linear_search(arr,value):
     for i in range(len(arr)):
         if arr[i] == value:
@@ -20,7 +19,6 @@ def binary_search(arr,value):
         else:
             low= mid + 1
     return -1
-
 
 def fixed_number(arr):
     low = 0
@@ -65,3 +63,24 @@ def integer_sqrt(k):
 
 def integer_sqr_root(k):
     return int(math.sqrt(k))
+
+def closest_number(arr, num):
+    low = 0
+    high = len(arr) - 1
+    closest = arr[0]
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if abs(arr[mid] - num) < abs(closest - num):
+            closest = arr[mid]
+
+        if arr[mid] < num:
+            low = mid + 1
+        elif arr[mid] > num:
+            high = mid - 1
+        else:
+            return arr[mid]
+
+    return closest
+

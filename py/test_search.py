@@ -79,3 +79,30 @@ def test_integer_square_root():
 
 def test_integer_square_root_2():
     assert 3 == integer_sqrt(12)
+
+def test_closest_number1():
+    assert 9 == closest_number([2, 5, 9, 12], 8)
+
+def test_closest_number2():
+    assert 5 == closest_number([1, 3, 5, 7], 5)
+
+def test_closest_number3():
+    assert 10 == closest_number([10, 20, 30], 5)
+
+def test_closest_number4():
+    assert 30 == closest_number([10, 20, 30], 40)
+
+def test_closest_number5():
+    assert 6 == closest_number([6, 8], 7)  # tie → smaller
+
+def test_closest_number6():
+    assert 4 == closest_number([2, 4, 4, 4, 6, 8], 5)
+
+def test_closest_number7():
+    assert 7 == closest_number([7, 7, 7, 7], 10)
+
+def test_closest_number8():
+    assert -5 == closest_number([-10, -5, -2, 0, 3], -4)
+
+def test_closest_number9():
+    assert 100 == closest_number([100], 50)
