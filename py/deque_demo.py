@@ -1,0 +1,36 @@
+from collections import deque
+
+dq = deque()
+dq.append(1)
+dq.append(2)
+dq.append(3)
+dq.append(4)
+dq.append(5)
+dq.append(6)
+
+print(dq)
+
+dq=deque(maxlen=5)
+dq.append(1)
+dq.append(2)
+dq.append(3)
+dq.append(4)
+dq.append(5)
+dq.append(6)
+print(dq)
+
+dq.rotate(1)
+print(dq)
+dq.rotate(2)
+print(dq)
+print(dq.popleft())
+print(dq)
+dq.appendleft(8)
+print(dq)
+
+dq = deque([1,2,3,4,5])
+print(dq)
+dq.extendleft([6,7,8,9,10])
+print(dq)
+dq.extend([11,12,13,14,15])
+print(dq)
