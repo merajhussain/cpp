@@ -1,4 +1,3 @@
-from idlelib import tree
 
 from my_queue import my_queue
 from tree_node import TreeNode
