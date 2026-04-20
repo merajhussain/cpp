@@ -37,5 +37,10 @@ def show_obj(obj):
 def _(obj:int):
     print("Int version of ",obj)
 
+@show_obj.register(str)
+def _(obj):
+    print("str version of ",obj)
+
 show_obj(1)
+show_obj(2.0)
 show_obj("hi")
