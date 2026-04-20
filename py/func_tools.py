@@ -1,4 +1,4 @@
-from functools import lru_cache,partial
+from functools import lru_cache,partial,singledispatch
 
 @lru_cache(maxsize=100)
 def fib_lru_cache(n):
@@ -27,3 +27,15 @@ mulp=partial(mul,3,4)
 
 print(addp())
 print(mulp())
+
+
+@singledispatch
+def show_obj(obj):
+    print("default version of",obj)
+
+@show_obj.register
+def _(obj:int):
+    print("Int version of ",obj)
+
+show_obj(1)
+show_obj("hi")
