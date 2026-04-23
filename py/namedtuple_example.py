@@ -80,6 +80,7 @@ products = [
     Product("India", "Pharmaceutical Products", "Eden Healthcare", "Healthcare", 2000),
     Product("India", "Pharmaceutical Products", "Lyra Laboratories", "Healthcare", 2000),
     Product("India", "Pharmaceutical Products", "Sygna Pharma", "Healthcare", 2000),
+    Product("India", "Scorpio", "Mahindra", "SUV", 1700000),
 
     Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
