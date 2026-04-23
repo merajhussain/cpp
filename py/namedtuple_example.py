@@ -37,6 +37,9 @@ products = [
     Product("France", "Mistral AI", "Mistral", "AI Model", 2000),
     Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
 
+    Product("Sweden", "XC90", "Volvo", "Luxury SUV", 9000000),
+    Product("Sweden", "Spotify Premium", "Spotify", "Streaming Service", 119),
+
     Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
     Product("India", "450X", "Ather", "Electric Scooter", 150000),
     Product("India", "Vikram Rocket", "Skyroot", "Space Tech", 100000000),
