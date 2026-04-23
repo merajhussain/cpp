@@ -33,12 +33,19 @@ products = [
     Product("USA", "Gemini", "Google", "AI Model", 2000),
     Product("USA", "ChatGPT", "OpenAI", "AI Model", 2000),
     Product("USA", "Figo", "Ford", "Hatchback", 6000000),
+    Product("USA", "Xbox Series X", "Microsoft", "Gaming Console", 55000),
+
+    Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
 
     Product("France", "Mistral AI", "Mistral", "AI Model", 2000),
     Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
 
     Product("Sweden", "XC90", "Volvo", "Luxury SUV", 9000000),
     Product("Sweden", "Spotify Premium", "Spotify", "Streaming Service", 119),
+
+    Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
+
+    Product("Czech Republic", "Octavia", "Škoda", "Sedan", 2500000),
 
     Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
     Product("India", "450X", "Ather", "Electric Scooter", 150000),
@@ -47,14 +54,13 @@ products = [
     Product("India", "Freshdesk", "Freshworks", "Software", 2000),
     Product("India", "Attar Perfume", "Adil Quadri", "Perfume", 3000),
 
-    Product("Czech Republic", "Octavia", "Škoda", "Sedan", 2500000),
-    Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
 
     Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
 
     Product("Japan", "Corolla", "Toyota", "Sedan", 2000000),
     Product("Japan", "Bravia 55", "Sony", "Television", 90000),
+    Product("Japan", "PlayStation 5", "Sony", "Gaming Console", 55000),
 
 
     Product("South Korea", "Creta", "Hyundai", "SUV", 1500000),
@@ -72,6 +78,9 @@ products = [
     Product("Qatar", "LNG Gas", "QatarEnergy", "Energy", 1000000),
 
     Product("Turkey", "Turkish Delight", "Hacı Bekir", "Sweet", 1500),
+
+
+    Product("Germany", "Front Load Washing Machine", "Bosch", "Appliance", 50000),
 ]
 
 for p in products:
