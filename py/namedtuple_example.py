@@ -39,15 +39,16 @@ products = [
     Product("USA", "TPU", "Google", "AI Hardware", 5000),
     Product("USA", "IBM Quantum System One", "IBM", "Quantum Computer", 10000000),
     Product("USA", "Sycamore", "Google", "Quantum Processor", 8000000),
-    Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
     Product("USA", "Falcon 9", "SpaceX", "Rocket", 500000000),
     Product("USA", "Ensure", "Abbott", "Healthcare Nutrition", 2000),
+    Product("USA", "Instagram", "Meta", "Social Media", 0),
+
+    Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
 
     Product("France", "Mistral AI", "Mistral", "AI Model", 2000),
     Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
     Product("France", "Pharmaceuticals", "Sanofi", "Healthcare", 3000),
     Product("France", "Sports Gear", "Decathlon", "Retail", 5000),
-
 
     Product("Sweden", "XC90", "Volvo", "Luxury SUV", 9000000),
     Product("Sweden", "Spotify Premium", "Spotify", "Streaming Service", 119),
