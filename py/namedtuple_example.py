@@ -31,6 +31,7 @@ products = [
     Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
     Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
     Product("Japan", "Corolla", "Toyota", "Sedan", 2000000),
+    Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
     Product("South Korea", "Creta", "Hyundai", "SUV", 1500000),
     Product("South Korea", "Seltos", "Kia", "SUV", 1400000),
