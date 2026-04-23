@@ -36,6 +36,9 @@ products = [
     Product("USA", "Xbox Series X", "Microsoft", "Gaming Console", 55000),
     Product("USA", "SQL Server", "Microsoft", "Database", 2000),
     Product("USA", "Banking Services", "Wells Fargo", "Finance", 2000),
+    Product("USA", "TPU", "Google", "AI Hardware", 5000),
+    Product("USA", "IBM Quantum System One", "IBM", "Quantum Computer", 10000000),
+    Product("USA", "Sycamore", "Google", "Quantum Processor", 8000000),
 
     Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
 
@@ -48,7 +51,7 @@ products = [
     Product("France", "Sports Gear", "Decathlon", "Retail", 5000),
 
     Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
-Product("Switzerland", "Reinsurance Services", "Swiss Re", "Insurance", 3000),
+    Product("Switzerland", "Reinsurance Services", "Swiss Re", "Insurance", 3000),
 
     Product("Czech Republic", "Octavia", "Škoda", "Sedan", 2500000),
 
@@ -66,6 +69,7 @@ Product("Switzerland", "Reinsurance Services", "Swiss Re", "Insurance", 3000),
     Product("India", "Cloud Hosting", "Utho", "Cloud Platform", 1000),
     Product("India", "IT Services", "Infosys", "Software Services", 2000),
     Product("India", "IT Services", "Wipro", "Software Services", 2000),
+    Product("India", "Engineering Services", "Cyient", "Software Services", 2000),
 
     Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
