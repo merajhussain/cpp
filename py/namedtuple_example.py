@@ -39,16 +39,18 @@ products = [
     Product("USA", "TPU", "Google", "AI Hardware", 5000),
     Product("USA", "IBM Quantum System One", "IBM", "Quantum Computer", 10000000),
     Product("USA", "Sycamore", "Google", "Quantum Processor", 8000000),
-
     Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
-
+    Product("USA", "Falcon 9", "SpaceX", "Rocket", 500000000),
+    Product("USA", "Ensure", "Abbott", "Healthcare Nutrition", 2000),
 
     Product("France", "Mistral AI", "Mistral", "AI Model", 2000),
     Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
+    Product("France", "Pharmaceuticals", "Sanofi", "Healthcare", 3000),
+    Product("France", "Sports Gear", "Decathlon", "Retail", 5000),
+
 
     Product("Sweden", "XC90", "Volvo", "Luxury SUV", 9000000),
     Product("Sweden", "Spotify Premium", "Spotify", "Streaming Service", 119),
-    Product("France", "Sports Gear", "Decathlon", "Retail", 5000),
 
     Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
     Product("Switzerland", "Reinsurance Services", "Swiss Re", "Insurance", 3000),
@@ -59,6 +61,9 @@ products = [
     Product("UK", "Audit Services", "EY", "Consulting", 3000),
     Product("UK", "Retail Banking", "Lloyds Bank", "Finance", 2000),
     Product("UK", "Audit Services", "EY", "Consulting", 3000),
+    Product("UK", "Vaccines", "GSK", "Healthcare", 3000),
+    Product("UK", "Pharmaceuticals", "AstraZeneca", "Healthcare", 3000),
+
 
     Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
     Product("India", "450X", "Ather", "Electric Scooter", 150000),
@@ -70,6 +75,10 @@ products = [
     Product("India", "IT Services", "Infosys", "Software Services", 2000),
     Product("India", "IT Services", "Wipro", "Software Services", 2000),
     Product("India", "Engineering Services", "Cyient", "Software Services", 2000),
+    Product("India", "Covaxin", "Bharat Biotech", "Vaccine", 2000),
+    Product("India", "Pharmaceutical Products", "Eden Healthcare", "Healthcare", 2000),
+    Product("India", "Pharmaceutical Products", "Lyra Laboratories", "Healthcare", 2000),
+    Product("India", "Pharmaceutical Products", "Sygna Pharma", "Healthcare", 2000),
 
     Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
