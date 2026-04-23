@@ -88,6 +88,7 @@ products = [
     Product("Japan", "Corolla", "Toyota", "Sedan", 2000000),
     Product("Japan", "Bravia 55", "Sony", "Television", 90000),
     Product("Japan", "PlayStation 5", "Sony", "Gaming Console", 55000),
+    Product("Japan", "ASIMO", "Honda", "Humanoid Robot", 2500000),
 
 
     Product("South Korea", "Creta", "Hyundai", "SUV", 1500000),
@@ -97,6 +98,7 @@ products = [
 
     Product("China", "Seal", "BYD", "Electric Car", 3500000),
     Product("China", "OnePlus 12", "OnePlus", "Smartphone", 65000),
+    Product("China", "H1", "Unitree", "Humanoid Robot", 2000000),
 
     Product("Saudi Arabia", "Ajwa Dates", "Al Madinah", "Food", 3000),
 
