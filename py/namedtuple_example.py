@@ -14,9 +14,36 @@ p2 =  Phone("Google","Pixel 9","Android",80000)
 print(p1)
 print(p2)
 
-Car = namedtuple('Car', ('name', 'model', 'year'))
-c1 = Car('Mercedes', model='g wagon', year=1999)
-print(c1)
 
-Bike = namedtuple('Bike','Name','Model','Price',)
+Bike = namedtuple('Bike',('Name','Model','Price'))
+b1 = Bike('Royal Enfield','Meteor-350',300000)
+print(b1)
 
+Product = namedtuple('Product', ('country', 'name', 'brand', 'type', 'price'))
+
+products = [
+    Product("USA", "Figo", "Ford", "Hatchback", 6000000),  # ✅ Replaced Mustang with Figo
+    Product("USA", "Model 3", "Tesla", "Electric Car", 4500000),
+    Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
+    Product("India", "Attar Perfume", "Adil Quadri", "Perfume", 3000),
+    Product("Sweden", "XC90", "Volvo", "Luxury SUV", 9000000),
+    Product("Czech Republic", "Octavia", "Škoda", "Sedan", 2500000),
+    Product("France", "Handbag", "Louis Vuitton", "Luxury Fashion", 200000),
+    Product("Switzerland", "Submariner", "Rolex", "Luxury Watch", 1000000),
+    Product("Japan", "Corolla", "Toyota", "Sedan", 2000000),
+    Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
+    Product("South Korea", "Creta", "Hyundai", "SUV", 1500000),
+    Product("South Korea", "Seltos", "Kia", "SUV", 1400000),
+    Product("China", "Seal", "BYD", "Electric Car", 3500000),
+    Product("China", "OnePlus 12", "OnePlus", "Smartphone", 65000),
+    Product("Saudi Arabia", "Ajwa Dates", "Al Madinah", "Food", 3000),
+    Product("UAE", "Oud Perfume", "Ajmal", "Perfume", 12000),
+    Product("Qatar", "LNG Gas", "QatarEnergy", "Energy", 1000000),
+    Product("Turkey", "Turkish Delight", "Hacı Bekir", "Sweet", 1500),
+    Product("Japan", "Bravia 55", "Sony", "Television", 90000),
+    Product("South Korea", "Galaxy S24", "Samsung", "Smartphone", 90000),
+    Product("South Korea", "Dual Inverter AC", "LG", "Air Conditioner", 45000),
+]
+
+for p in products:
+    print(p)
