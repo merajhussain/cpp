@@ -49,6 +49,7 @@ products = [
     Product("USA", "Stanford University", "Stanford", "University", 0),
     Product("USA", "iPhone 17 Pro Max", "Apple", "iOS", 150000),
     Product("USA", "Pixel 9", "Google", "Android", 80000),
+    Product("USA", "Innerwear & Apparel", "Jockey", "Clothing", 2000),
 
     Product("Finland", "Linux", "Linus Torvalds", "Operating System", 0),
 
@@ -79,6 +80,7 @@ products = [
     Product("UK", "Enterprise Software", "Micro Focus (OpenText)", "Software", 5000),
     Product("UK", "University of Oxford", "Oxford", "University", 0),
 
+    Product("Italy", "Sunglasses", "Ray-Ban", "Eyewear", 5000),
 
     Product("Canada", "Enterprise Information Management", "OpenText", "Enterprise Software", 5000),
 
@@ -110,6 +112,15 @@ products = [
     Product("India", "Yogi Vemana University", "Kadapa", "University", 0),
     Product("India", "IIT Kadapa", "IIT", "Engineering Institute (Future)", 0),
     Product("India", "RIMS Kadapa", "RIMS", "Medical College", 0),
+    Product("India", "Cosmetics", "Sugar Cosmetics", "Beauty", 1000),
+    Product("India", "Pharmaceutical Products", "Panm Labs", "Pharma", 2000),
+    Product("India", "Eyewear", "Lenskart", "Retail", 3000),
+    Product("India", "Jewelry", "Palmonas", "Fashion", 2000),
+    Product("India", "Gold & Diamond Jewelry", "Malabar", "Jewelry", 50000),
+    Product("India", "Gold & Diamond Jewelry", "Kalyan Jewellers", "Jewelry", 50000),
+    Product("India", "Gold Jewelry", "Lalitha Jewellery", "Jewelry", 50000),
+    Product("India", "Gold & Diamond Jewelry", "Joyalukkas", "Jewelry", 50000),
+    Product("India", "Gold Jewelry", "Khazana Jewellery", "Jewelry", 50000),
 
     Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
 
@@ -145,6 +156,7 @@ products = [
     Product("Saudi Arabia", "Islamic University of Madinah", "IUM", "University", 0),
 
     Product("UAE", "Oud Perfume", "Ajmal", "Perfume", 12000),
+    Product("UAE", "Fashion Retail", "Max", "Clothing", 2000),
 
     Product("Qatar", "LNG Gas", "QatarEnergy", "Energy", 1000000),
 
