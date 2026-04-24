@@ -169,6 +169,7 @@ Product("India", "Interview Preparation", "Interview Ready", "EdTech", 2000),
 Product("India", "Career Upskilling", "Take U Forward", "EdTech", 2000),
 Product("India", "Programming Courses", "Chai aur Code", "EdTech", 2000),
 Product("India", "Math & Logic Learning", "Log2Base2", "EdTech", 2000),
+Product("India", "DSA & Interview Prep", "LearnYard", "EdTech", 2000),
 
 # Russia
 Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
