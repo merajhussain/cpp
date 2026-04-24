@@ -170,6 +170,8 @@ Product("India", "Career Upskilling", "Take U Forward", "EdTech", 2000),
 Product("India", "Programming Courses", "Chai aur Code", "EdTech", 2000),
 Product("India", "Math & Logic Learning", "Log2Base2", "EdTech", 2000),
 Product("India", "DSA & Interview Prep", "LearnYard", "EdTech", 2000),
+Product("India", "Anantapur Sports Village", "RF Youth Sports", "Sports Academy", 0),
+Product("India", "YSR Sports School Kadapa", "YSR Sports School", "Sports School", 0),
 
 # Russia
 Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
