@@ -120,6 +120,8 @@ Product("UK", "Oxford Faculty of Law", "Oxford", "Law College", 0),
 # Italy
 Product("Italy", "Sunglasses", "Ray-Ban", "Eyewear", 5000),
 
+#Spanish
+Product("Spain", "Olive Oil", "Extra Virgin", "Food", 1200),
 
 # India
 Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
@@ -243,9 +245,6 @@ Product("Turkey", "Restaurant Chain", "CZN Burak", "Food Chain", 3000),
 
 #Portugal
 Product("Portugal", "Cristiano Ronaldo", "Football", "Athlete", 0),
-
-
-
 
 # Germany
 Product("Germany", "Front Load Washing Machine", "Bosch", "Appliance", 50000),
