@@ -107,13 +107,19 @@ products = [
     Product("India", "IIT Delhi", "Indian Institute of Technology Delhi", "University", 0),
     Product("India", "900 sqft House", "Individual", "3-BHK", 6000000),
     Product("India", "Meteor-350", "Royal Enfield", "Bike", 300000),
-
+    Product("India", "Yogi Vemana University", "Kadapa", "University", 0),
+    Product("India", "IIT Kadapa", "IIT", "Engineering Institute (Future)", 0),
+    Product("India", "RIMS Kadapa", "RIMS", "Medical College", 0),
 
     Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
 
 
     Product("Iran", "Crude Oil", "NIOC", "Energy", 1000000),
     Product("Iran", "Saffron", "Iran Farms", "Spice", 50000),
+    Product("Iran", "University of Tehran", "Tehran", "University", 0),
+    Product("Iran", "Sharif University of Technology", "Sharif", "University", 0),
+
+    Product("Iraq", "University of Baghdad", "Baghdad", "University", 0),
 
     Product("Ireland", "Consulting Services", "Accenture", "Consulting", 3000),
 
