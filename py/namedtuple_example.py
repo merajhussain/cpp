@@ -144,11 +144,38 @@ products = [
 
     Product("Turkey", "Turkish Delight", "Hacı Bekir", "Sweet", 1500),
 
+    Product("USA", "Harvard Medical School", "Harvard", "Medical College", 0),
+    Product("UK", "University of Oxford Medical School", "Oxford", "Medical College", 0),
+    Product("France", "Sorbonne Medical School", "Sorbonne", "Medical College", 0),
+    Product("Sweden", "Karolinska Institute", "Karolinska", "Medical College", 0),
+    Product("Japan", "University of Tokyo Faculty of Medicine", "UTokyo", "Medical College", 0),
+    Product("China", "Peking University Health Science Center", "Peking", "Medical College", 0),
+    Product("Saudi Arabia", "King Saud University College of Medicine", "KSU", "Medical College", 0),
+    Product("Czech Republic", "Charles University Faculty of Medicine", "Charles", "Medical College", 0),
+    Product("India", "AIIMS Delhi", "AIIMS", "Medical College", 0),
+    Product("Switzerland", "University of Zurich Faculty of Medicine", "UZH", "Medical College", 0),
+    Product("Canada", "University of Toronto Faculty of Medicine", "Toronto", "Medical College", 0),
 
 
+    Product("USA", "Harvard Business School", "Harvard", "B-School", 0),
+    Product("USA", "Stanford Graduate School of Business", "Stanford", "B-School", 0),
+    Product("UK", "London Business School", "LBS", "B-School", 0),
+    Product("France", "INSEAD", "INSEAD", "B-School", 0),
+    Product("India", "IIM Ahmedabad", "IIM", "B-School", 0),
+    Product("China", "CEIBS", "CEIBS", "B-School", 0),
+    Product("Saudi Arabia", "Prince Mohammed Bin Salman College", "MBSC", "B-School", 0),
+    Product("Sweden", "Stockholm School of Economics", "SSE", "B-School", 0),
+    Product("Czech Republic", "University of Economics Prague", "VSE", "B-School", 0),
 
-
-
+    Product("USA", "USC School of Cinematic Arts", "USC", "Film Institute", 0),
+    Product("USA", "American Film Institute", "AFI", "Film Institute", 0),
+    Product("UK", "National Film and Television School", "NFTS", "Film Institute", 0),
+    Product("France", "La Fémis", "Femis", "Film Institute", 0),
+    Product("India", "FTII Pune", "FTII", "Film Institute", 0),
+    Product("China", "Beijing Film Academy", "BFA", "Film Institute", 0),
+    Product("Sweden", "Stockholm University of the Arts", "SKH", "Film Institute", 0),
+    Product("Czech Republic", "FAMU", "FAMU", "Film Institute", 0),
+    Product("Saudi Arabia", "Effat University Film School", "Effat", "Film Institute", 0),
 
 
     Product("Germany", "Front Load Washing Machine", "Bosch", "Appliance", 50000),
