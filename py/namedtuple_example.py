@@ -239,7 +239,10 @@ Product("South Korea", "Dual Inverter AC", "LG", "Air Conditioner", 45000),
 
 # Turkey
 Product("Turkey", "Turkish Delight", "Hacı Bekir", "Sweet", 1500),
+Product("Turkey", "Restaurant Chain", "CZN Burak", "Food Chain", 3000),
 
+#Portugal
+Product("Portugal", "Cristiano Ronaldo", "Football", "Athlete", 0),
 
 
 
