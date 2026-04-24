@@ -167,7 +167,6 @@ Product("India", "Ramanaidu Film School Hyderabad", "Ramanaidu", "Film Institute
 Product("India", "MGR Film Institute Chennai", "MGR", "Film Institute", 0),
 Product("India", "Interview Preparation", "Interview Ready", "EdTech", 2000),
 Product("India", "Career Upskilling", "Take U Forward", "EdTech", 2000),
-Product("India", "DevOps Learning", "KodeKloud", "EdTech", 2000),
 Product("India", "Programming Courses", "Chai aur Code", "EdTech", 2000),
 Product("India", "Math & Logic Learning", "Log2Base2", "EdTech", 2000),
 
@@ -227,6 +226,7 @@ Product("UAE", "Fashion Retail", "Max", "Clothing", 2000),
 
 # Singapore
 Product("Singapore", "NUS Faculty of Law", "NUS", "Law College", 0),
+Product("Singapore", "DevOps Learning", "KodeKloud", "EdTech", 2000),
 
 # South Korea
 Product("South Korea", "Creta", "Hyundai", "SUV", 1500000),
