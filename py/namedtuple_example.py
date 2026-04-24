@@ -183,6 +183,10 @@ products = [
     Product("Czech Republic", "FAMU", "FAMU", "Film Institute", 0),
     Product("Saudi Arabia", "Effat University Film School", "Effat", "Film Institute", 0),
 
+    Product("UK", "Oxford Faculty of Law", "Oxford", "Law College", 0),
+    Product("USA", "Harvard Law School", "Harvard", "Law College", 0),
+    Product("USA", "Yale Law School", "Yale", "Law College", 0),
+    Product("Singapore", "NUS Faculty of Law", "NUS", "Law College", 0),
 
     Product("Germany", "Front Load Washing Machine", "Bosch", "Appliance", 50000),
 
