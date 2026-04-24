@@ -161,7 +161,7 @@ products = [
     Product("India", "AIIMS Delhi", "AIIMS", "Medical College", 0),
     Product("Switzerland", "University of Zurich Faculty of Medicine", "UZH", "Medical College", 0),
     Product("Canada", "University of Toronto Faculty of Medicine", "Toronto", "Medical College", 0),
-
+    Product("India", "Osmania Medical College Hyderabad", "Osmania", "Medical College", 0),
 
     Product("USA", "Harvard Business School", "Harvard", "B-School", 0),
     Product("USA", "Stanford Graduate School of Business", "Stanford", "B-School", 0),
@@ -182,6 +182,8 @@ products = [
     Product("Sweden", "Stockholm University of the Arts", "SKH", "Film Institute", 0),
     Product("Czech Republic", "FAMU", "FAMU", "Film Institute", 0),
     Product("Saudi Arabia", "Effat University Film School", "Effat", "Film Institute", 0),
+    Product("India", "Ramanaidu Film School Hyderabad", "Ramanaidu", "Film Institute", 0),
+    Product("India", "MGR Film Institute Chennai", "MGR", "Film Institute", 0),
 
     Product("UK", "Oxford Faculty of Law", "Oxford", "Law College", 0),
     Product("USA", "Harvard Law School", "Harvard", "Law College", 0),
