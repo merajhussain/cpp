@@ -124,8 +124,6 @@ Product("Italy", "Sunglasses", "Ray-Ban", "Eyewear", 5000),
 Product("Spain", "Olive Oil", "Extra Virgin", "Food", 1200),
 
 # India
-Product("India", "Tadipatri", "Anantapur", "Town", 0),
-Product("India", "Proddatur", "Kadapa", "Town", 0),
 Product("India", "Airdopes 141", "boAt", "Earbuds", 1500),
 Product("India", "450X", "Ather", "Electric Scooter", 150000),
 Product("India", "Vikram Rocket", "Skyroot", "Space Tech", 100000000),
@@ -175,7 +173,7 @@ Product("India", "Programming Courses", "Chai aur Code", "EdTech", 2000),
 Product("India", "Math & Logic Learning", "Log2Base2", "EdTech", 2000),
 Product("India", "DSA & Interview Prep", "LearnYard", "EdTech", 2000),
 Product("India", "YSR Sports School Kadapa", "YSR Sports School", "Sports School", 0),
-Product("India", "Anantapur Sports Village", "RF Youth Sports", "Sports Academy", 0),
+Product("India", "Kadapa-Tadipatri-Proddatur-Kurnool-Tirupathi", "Future Smart cities", "Town", 0),
 
 # Russia
 Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
