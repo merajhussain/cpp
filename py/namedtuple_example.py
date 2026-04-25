@@ -248,7 +248,9 @@ Product("Portugal", "Cristiano Ronaldo", "Football", "Athlete", 0),
 
 # Germany
 Product("Germany", "Front Load Washing Machine", "Bosch", "Appliance", 50000),
-Product("Germany", "G-Class (G-Wagon)", "Mercedes-Benz", "Luxury SUV", 30000000)
+Product("Germany", "G-Class (G-Wagon)", "Mercedes-Benz", "Luxury SUV", 30000000),
+
+Product("India", "Anantapur", "Town", "Small town", 0)
 
 ]
 
