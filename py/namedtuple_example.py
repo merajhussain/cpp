@@ -173,7 +173,7 @@ Product("India", "Programming Courses", "Chai aur Code", "EdTech", 2000),
 Product("India", "Math & Logic Learning", "Log2Base2", "EdTech", 2000),
 Product("India", "DSA & Interview Prep", "LearnYard", "EdTech", 2000),
 Product("India", "YSR Sports School Kadapa", "YSR Sports School", "Sports School", 0),
-Product("India", "Kadapa-Tadipatri-Proddatur-Kurnool-Tirupathi", "Future Smart cities", "Town", 0),
+Product("India", "Kadapa-Tadipatri-Proddatur-Kurnool-Tirupathi", "Future Smart cities", "Smart City", 0),
 
 # Russia
 Product("Russia", "Kaspersky", "Kaspersky", "Cybersecurity", 2000),
