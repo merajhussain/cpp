@@ -19,8 +19,14 @@ class my_iter:
 
 
 it = my_iter()
-for i in range(0,10):
+for i in range(0,4):
     it.append(i)
 
 for item in it:
     print(item)
+
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
