@@ -65,3 +65,6 @@ print("####zip_longest####")
 for item in zip_longest('ABCDEF','XYZ',fillvalue='*'):
     print(item)
 
+print (list(combinations('ABCD', 3)))
+
+print(list(permutations('WXYZ', 2)))
