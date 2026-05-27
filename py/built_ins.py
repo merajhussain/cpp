@@ -74,10 +74,3 @@ print(finnish_muuttuja)
 print(korean_변수)
 print(chinese_变量)
 print(japanese_変数)
-
-
-
-
-
-print(finnish_muuttuja)
-print(swedish_variabel)
