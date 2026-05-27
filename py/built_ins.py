@@ -32,3 +32,52 @@ values=['a','b','c','d','e']
 print(list(zip(keys,values)))
 print(dict(zip(keys,values)))
 
+
+my_str="this is string"
+my_unicode_str = u'this is unicode string'
+print(type(my_str))
+print(type(my_unicode_str))
+
+english_variable = "This is English variable"
+hindi_चर = "This is Hindi variable"
+urdu_متغیر = "This is Urdu variable"
+telugu_చరము = "This is Telugu variable"
+kannada_ಚರ = "This is Kannada variable"
+tamil_மாறி = "This is Tamil variable"
+marathi_चल = "This is Marathi variable"
+gujarati_ચલ = "This is Gujarati variable"
+bengali_চলক = "This is Bengali variable"
+arabic_متغير = "This is Arabic variable"
+
+french_variable = "This is French variable"
+finnish_muuttuja = "This is Finnish variable"
+swedish_variabel = "This is Swedish variable"
+korean_변수 = "This is Korean variable"
+chinese_变量 = "This is Chinese variable"
+japanese_変数 = "This is Japanese variable"
+
+
+print(english_variable)
+print(hindi_चर)
+print(urdu_متغیر)
+print(telugu_చరము)
+print(kannada_ಚರ)
+print(tamil_மாறி)
+
+print(marathi_चल)
+print(gujarati_ચલ)
+print(bengali_চলক)
+print(arabic_متغير)
+print(french_variable)
+print(swedish_variabel)
+print(finnish_muuttuja)
+print(korean_변수)
+print(chinese_变量)
+print(japanese_変数)
+
+
+
+
+
+print(finnish_muuttuja)
+print(swedish_variabel)
