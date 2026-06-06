@@ -1,4 +1,4 @@
-meraj="either hyderabad/kadapa"
+meraj="either hyderabad/kadapa/Bengaluru"
 
 def travel():
     global meraj
@@ -9,7 +9,7 @@ print(meraj)
 travel()
 
 def meraj_nonlocal():
-    meraj="Either Hyderabad/kadapa"
+    meraj="Either Hyderabad/kadapa/Bengaluru"
     print(meraj)
     def change():
         nonlocal meraj
