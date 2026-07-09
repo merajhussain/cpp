@@ -135,6 +135,7 @@ class doublyLinkedList(Ilist):
             if current.data == data:
                 return current
             current = current.next
+        return None
 
     def remove_duplicates(self):
         dups = dict()
