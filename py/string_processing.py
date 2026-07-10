@@ -24,10 +24,7 @@ class string_processing:
         return count
        
     def count_vowels(self, string):
-        count = 0
-        for c in string:
-            if c in ["a", "e", "i", "o", "u"]:
-                count += 1
+        count = len([c for c in string if c in ["a", "e", "i", "o", "u"]])
         return count
 
 
