@@ -33,3 +33,8 @@ def test_stack_peek():
     stk.push(3)
     expected = 3
     assert expected == stk.peek()
+   
+def test_empty_stack_pop():
+    stk = Stack()
+    with pytest.raises(AssertionError):
+        stk.pop()
