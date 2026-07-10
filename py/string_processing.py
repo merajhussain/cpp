@@ -22,6 +22,14 @@ class string_processing:
             if c not in ["a", "e", "i", "o", "u"]:
                 count += 1
         return count
+       
+    def count_vowels(self, string):
+        count = 0
+        for c in string:
+            if c in ["a", "e", "i", "o", "u"]:
+                count += 1
+        return count
+
 
     def recursive_multiply(self,a,b):
         if b==0:
