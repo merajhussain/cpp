@@ -164,6 +164,9 @@ public:
             }
         }
 
+        ref_count = nullptr;
+        m_ptr = nullptr;
+
     }
 
 
