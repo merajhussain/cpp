@@ -89,6 +89,7 @@ namespace MyStack
 		~stack()
 		{
 			delete[] elems;
+			elems = nullptr;
 		}
 
 		void destroy()
