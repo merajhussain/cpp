@@ -35,5 +35,6 @@ int main()
 
    delete b;
 
+   b = nullptr;//doesn't really matter here
     return 0;
 }
