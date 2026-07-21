@@ -177,8 +177,6 @@ class LinkedList
 		if( head)
 		{
 
-
-
 			auto temp = head;
 			auto next = temp;
 			while(temp != nullptr)
