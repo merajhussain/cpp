@@ -33,9 +33,11 @@ class LinkedList
 
 
         
-
         T get(ull index)
 	{
+
+		if(head == nullptr) return T();
+		
 		Node<T> *cur = head;
 		for(ull i=1;i<index;i++)
 		{
